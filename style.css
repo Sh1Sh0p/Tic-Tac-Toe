@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 850;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('tictactoebackground.png');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+}
+
+.gamefield {
+    width: 300px;
+    height: 300px;
+}
+
+.cells {
+    display: flex;
+}
+
+.cell {
+    font-size: 130px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 25px;
+}
+
+.restart {
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: all ease 0.70s;
+}
+
+.restart:hover{
+background-color: red;
+color: white;
+border: 2px solid white;
+}
