@@ -65,6 +65,23 @@ body {
 }
 
 .restart:hover{
+background-color: orange;
+color: white;
+border: 2px solid white;
+}
+
+.reset {
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: all ease 0.70s;
+}
+
+.reset:hover{
 background-color: red;
 color: white;
 border: 2px solid white;

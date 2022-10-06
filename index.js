@@ -2,6 +2,7 @@ const cell = document.querySelectorAll('.cell');
 const player1ScoreSpan = document.querySelector('.player1Score');
 const player2ScoreSpan = document.querySelector('.player2Score');
 const restartBtn = document.querySelector('.restart');
+const resetBtn = document.querySelector('.reset');
  
 const winCombinations = [
     [0, 1, 2],
@@ -24,8 +25,8 @@ let score = {
  
 let flag = true;
  
-var player1Name = window. prompt("Име на първия играч: ");
-var player2Name = window. prompt("Име на втория играч: ");
+var player1Name = window.prompt("Име на първия играч: ");
+var player2Name = window.prompt("Име на втория играч: ");
 
  
 for(let i = 0; i < cell.length; i++) {
@@ -101,8 +102,8 @@ function checkWinner() {
 }
  
 function drawScore() {
-    player1ScoreSpan.innerHTML = player1Name + "<b> (X):</b> " + score.player1 + "т.";
-    player2ScoreSpan.innerHTML = player2Name + "<b> (O):</b> " + score.player2 + "т.";
+    player1ScoreSpan.innerHTML = player1Name.toUpperCase() + "<b> (X):</b> " + score.player1 + "т.";
+    player2ScoreSpan.innerHTML = player2Name.toUpperCase() + "<b> (O):</b> " + score.player2 + "т.";
 }
 drawScore();
  
@@ -117,4 +118,19 @@ function clearField() {
  
 restartBtn.addEventListener('click', () => {
     clearField();
+})
+
+resetBtn.addEventListener('click', () => {
+    
+    let isConfirmed = window.confirm("Това действие ще занули запазения резултат. Да продължим ли?");
+    
+    if(isConfirmed === true) {
+        clearField();
+        score.player1 = 0;
+        score.player2 = 0;
+        drawScore();
+    }
+    else {
+        return;
+    }
 })
