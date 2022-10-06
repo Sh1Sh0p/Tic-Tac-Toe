@@ -57,5 +57,5 @@ For support, email sh1sh0@abv.bg or join my [Discord server](https://www.github.
 ![Example 5](https://i.ibb.co/yB8KfBC/image.png)
 
 ##
-![Logo](https://i.imgur.com/nAejKjY.png)
+![Logo](https://i.ibb.co/0t4PR02/favicon.png)
 
